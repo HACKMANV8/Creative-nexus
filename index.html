@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🏥 Hospital Management System</h1>
+    <nav>
+      <button onclick="showSection('home')">Home</button>
+      <button onclick="showSection('patients')">Patients</button>
+      <button onclick="showSection('doctors')">Doctors</button>
+      <button onclick="showSection('appointments')">Appointments</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home -->
+    <section id="home" class="active">
+      <h2>Welcome to Our Hospital</h2>
+      <p>Manage patient records, doctor details, and appointments easily.</p>
+    </section>
+
+    <!-- Patient Registration -->
+    <section id="patients">
+      <h2>Register New Patient</h2>
+      <form id="patientForm">
+        <label>Name:</label>
+        <input type="text" id="pname" required>
+        <label>Age:</label>
+        <input type="number" id="page" required>
+        <label>Disease:</label>
+        <input type="text" id="pdisease" required>
+        <button type="submit">Add Patient</button>
+      </form>
+      <h3>Patient List</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Disease</th>
+          </tr>
+        </thead>
+        <tbody id="patientTable"></tbody>
+      </table>
+    </section>
+
+    <!-- Doctors -->
+    <section id="doctors">
+      <h2>Our Doctors</h2>
+      <ul id="doctorList">
+        <li>Dr. Asha — Cardiologist</li>
+        <li>Dr. Ravi — Neurologist</li>
+        <li>Dr. Priya — Pediatrician</li>
+        <li>Dr. Kumar — Orthopedic</li>
+      </ul>
+    </section>
+
+    <!-- Appointments -->
+    <section id="appointments">
+      <h2>Book Appointment</h2>
+      <form id="appointmentForm">
+        <label>Patient Name:</label>
+        <input type="text" id="apName" required>
+        <label>Doctor:</label>
+        <input type="text" id="apDoctor" required>
+        <label>Date:</label>
+        <input type="date" id="apDate" required>
+        <button type="submit">Book</button>
+      </form>
+      <h3>Appointment List</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Patient</th>
+            <th>Doctor</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody id="appointmentTable"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Hospital Management System</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
