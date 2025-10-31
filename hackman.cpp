@@ -52,3 +52,14 @@ for (int i = 0; i < 4; i++) {
     cout << endl
          << endl;
 }
+void PrintPatientData(
+    vector<Patient>& patients,
+    vector<Hospital>& hospitals)
+{
+    cout << "PRINT patients DATA:"
+         << endl;
+    cout << "Patient_Name     "
+         << "Patient_Id     "
+         << "Patient_Contact     "
+         << "Alloted_Hospital     "
+         << "Patient_Expenditure     \n";
