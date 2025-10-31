@@ -63,3 +63,23 @@ void PrintPatientData(
          << "Patient_Contact     "
          << "Alloted_Hospital     "
          << "Patient_Expenditure     \n";
+
+         for (int i = 0; i < 4; i++) {
+        cout << patients[i].P_name
+             << "                "
+             << "          "
+             << patients[i].P_id
+              << "              "
+             << "          "
+             << patients[i].contact
+             << "                   "
+             << hospitals[i].H_name
+             << "                   "
+             << patients[i].price
+             << "            "
+             << endl;
+    }
+
+    cout << endl
+         << endl;
+}
